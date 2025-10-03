@@ -1,0 +1,32 @@
+[Start]
+   |
+[Show Main Screen: Sign In / Sign Up]
+   |
++-----------------------------+
+|                             |
+V                             V
+[User chooses Sign In]       [User chooses Sign Up]
+   |                             |
+[Enter credentials]           [Enter registration data]
+   |                             |
+[Validate against DB]         [Validate fields & uniqueness]
+   |                             |
++--Yes------------------+   +---Valid?---+
+|                     No|   |           No|
+V                       V   V            V
+[Login success]     [Error: invalid]  [Error: input]
+   |                   back to               back to
+[Go to Home]        Sign In                 Sign Up
+   |
+[At Home Screen display options:]
+   |– Manage Meals
+   |– Change Password
+   |– About System
+   |– Logout
+   |
+[Manage Meals selected?]--> Flow for Add, Update, Delete, Search, Image handling
+[Change Password?]--> Flow for validating current/new password and updating DB
+[About System?]--> Return to Home on click
+[Logout?]--> Clear session & back to Sign In
+
+[End / Quit]
